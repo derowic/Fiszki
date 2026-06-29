@@ -14,11 +14,11 @@
    **Factory Method, Abstract Factory, Singleton, Prototype, Builder**
 8. Tworzenie obiektu bez znajomości konkretnego typu w czasie kompilacji (compile-time)
    **Factory Method, Abstract Factory, Prototype**
-9. Co w przypadku wzorca Singleton jest prawdą, a co mitem?
+9. Co w przypadku wzorca Singleton jest prawdą, a co mitem? 1. Jest zawsze bezpieczny wątkowo, 2. Jest to świetny wzorzec, który warto stosować wszędzie tam, gdzie potrzebujemy współdzielić dane, 3. Automatycznie zwalnia pamięć, gdy nie jest używany, 4. Wprowadza globalny stan do aplikacji
    **Prawdą jest, że wprowadza globalny stan do aplikacji**
 10. Co właściwie zapewnia wzorzec Abstract Factory?
     **Spójną rodzinę produktów**
-11. Które zdanie na temat Singletona jest prawdziwe?
+11. Które zdanie na temat Singletona jest prawdziwe? 1.Gwarantuje dokładnie jedną instancję; wprowadza globalny stan utrudniający testy; bywa antywzorcem, dla którego alternatywą jest Dependency Injection (DI), 2. Gwarantuje automatyczne bezpieczeństwo wątkowe w każdym środowisku bez konieczności stosowania synchronizacji., 3. Jest wzorcem strukturalnym, który ułatwia testowanie jednostkowe poprzez automatyczne izolowanie stanu obiektów.
     **Gwarantuje dokładnie jedną instancję; wprowadza globalny stan utrudniający testy; bywa antywzorcem, dla którego alternatywą jest Dependency Injection (DI)**
 12. Konwersja interfejsu niekompatybilnego na taki, jakiego oczekuje klient
     **Adapter**
@@ -36,9 +36,9 @@
     **Bridge (Most)**
 19. Wskaż wzorce strukturalne
     **Adapter, Decorator, Facade, Composite, Proxy, Flyweight, Bridge**
-20. Co jest prawdą w przypadku wzorca Decorator?
+20. Co jest prawdą w przypadku wzorca Decorator? 1. Można go nakładać warstwowo (stackować); posiada ten sam interfejs co obiekt; jest alternatywą dla dziedziczenia, 2. Wymaga modyfikacji kodu źródłowego klasy bazowej za każdym razem, gdy chcemy dodać nową funkcjonalność do obiektu., 3. Definiuje relację jeden-do-wielu, w której zmiana stanu jednego obiektu powoduje automatyczne powiadomienie innych obiektów. (Opis wzorca Obserwator) ,Zapewnia, że w całym systemie istnieje tylko jedna instancja danej klasy i tworzy do niej globalny punkt dostępu. (Opis wzorca Singleton)
     **Można go nakładać warstwowo (stackować); posiada ten sam interfejs co obiekt; jest alternatywą dla dziedziczenia**
-21. Prawidłowe zastosowania wzorca Proxy to:
+21. Prawidłowe zastosowania wzorca Proxy to: 1.Lazy loading (leniwe ładowanie), Cache (buforowanie), Kontrola uprawnie, 2.Konwersja niekompatybilnego interfejsu jednej klasy na inny interfejs, którego oczekuje klient., 3.Dynamiczne dodawanie nowych, opcjonalnych zachowań i odpowiedzialności do pojedynczego obiektu bez zmiany jego kodu.
     **Lazy loading (leniwe ładowanie), Cache (buforowanie), Kontrola uprawnień**
 22. Które wzorce opakowują obiekt bez zmiany jego kodu źródłowego?
     **Decorator, Adapter, Proxy**
@@ -58,11 +58,11 @@
     **Memento (Pamiątka)**
 30. Nowa operacja wykonywana na strukturze obiektów bez modyfikowania ich klas
     **Visitor (Odwiedzający)**
-31. Co jest prawdą o wzorcu Observer?
+31. Co jest prawdą o wzorcu Observer? 1. Pozwala na dynamiczne dodawanie nowych odpowiedzialności do obiektu bez konieczności modyfikowania jego klasy bazowej.  2.Wymusza silne powiązanie (tight coupling) pomiędzy obiektami, przez co obiekty obserwujące muszą dokładnie znać wewnętrzną strukturę podmiotu.3. Definiuje zależność jeden-do-wielu; Subject (podmiot) powiadamia obserwatorów o zmianach
     **Definiuje zależność jeden-do-wielu; Subject (podmiot) powiadamia obserwatorów o zmianach**
 32. Które wzorce behawioralne nadają się do budowy pipeline'u (łańcucha operacji)?
     **Chain of Responsibility, Command**
-33. Co jest prawdą o wzorcu State?
+33. Co jest prawdą o wzorcu State? Stany mogą inicjować przejścia do innych stanów; klasa deleguje zadania do aktualnego obiektu stanu, Wymusza, aby to wyłącznie klient (użytkownik klasy) ręcznie zmieniał i ustawiał aktualny stan obiektu przed każdym wywołaniem metody. Służy do tworzenia globalnego punktu dostępu do dokładnie jednej instancji stanu w całej aplikacji.
     **Stany mogą inicjować przejścia do innych stanów; klasa deleguje zadania do aktualnego obiektu stanu**
 34. Co odróżnia wzorzec State od Strategy?
     **W State obiekt sam zmienia swoje zachowanie w zależności od stanu; w Strategy to klient wybiera algorytm z zewnątrz. Oba wykorzystują polimorfizm**
@@ -78,7 +78,45 @@
     **ISP (Zasada segregacji interfejsów)**
 40. Klasa obsługująca pliki dodatkowo je kompresuje i loguje zdarzenia. Jakie zasady łamie?
     **SRP (Zasada pojedynczej odpowiedzialności)**
-41. Które stwierdzenia dotyczące zasady DIP (Dependency Inversion Principle) są poprawne?
+41. Które stwierdzenia dotyczące zasady DIP (Dependency Inversion Principle) są poprawne? Szczegóły powinny zależeć od abstrakcji, a nie odwrotnie; moduły wysokopoziomowe i niskopoziomowe powinny zależeć od abstrakcji*, Moduły wysokopoziomowe powinny bezpośrednio tworzyć instancje klas niskopoziomowych za pomocą operatora new, aby zapewnić stabilność kodu, Abstrakcje powinny zależeć od szczegółów implementacyjnych, co pozwala na szybsze wprowadzanie zmian w logice biznesowej.
     **Szczegóły powinny zależeć od abstrakcji, a nie odwrotnie; moduły wysokopoziomowe i niskopoziomowe powinny zależeć od abstrakcji**
 42. Jakie objawy świadczą o naruszeniu zasady SRP?
     **Klasa zmienia się z wielu różnych powodów; miesza logikę biznesową z dostępem do bazy danych i formatowaniem; jest trudna do testowania, bo robi zbyt wiele rzeczy naraz**
+42. Wymień wzorce behawioralne
+    **chain of resposibilites, memento, observer, visitior, interperter, strategu, command, state, templateMethod, iterator, mediator**
+43. Klient chce wykonać operację (np. „Zapisz”, „Otwórz”, „Cofnij”), ale nie chce znać szczegółów jej realizacji
+Command (Polecenie)
+44. Umożliwia dostęp do elementów kolekcji bez ujawniania jej wewnętrznej struktury
+Iterator (Iterator)
+45. Wzorzec używany w interpreterach języków, wyrażeń regularnych lub prostych gramatyk
+Interpreter
+46. Wskaż wszystkie wzorce behawioralne
+Chain of Responsibility, Command, Interpreter, Iterator, Mediator, Memento, Observer, State, Strategy, Template Method, Visitor
+47. Które zdanie najlepiej opisuje wzorzec Command? 1. Hermetyzuje żądanie jako obiekt, umożliwiając parametryzację klientów, kolejkowanie operacji oraz wsparcie dla undo/redo., 2. Definiuje rodzinę algorytmów i pozwala na ich wymianę w czasie działania., 3. Umożliwia dodawanie nowych zachowań poprzez opakowywanie obiektu.
+Odpowiedź: 1
+48. Co odróżnia Command od Strategy?
+Command hermetyzuje całe żądanie (często z parametrami i możliwością cofnięcia), Strategy hermetyzuje tylko algorytm/wariant zachowania.
+49. Wzorzec, który pozwala na „cofanie” operacji poprzez zapisywanie stanu obiektu
+Memento (Pamiątka)
+50. Które wzorce mogą być użyte do implementacji mechanizmu „Cofnij” (Undo)?
+Command + Memento
+51. Klasa UserService zawiera metody: rejestracja, logowanie, wysyłanie maila, generowanie PDF raportu i walidacja danych. Którą zasadę SOLID łamie najbardziej?
+SRP (Single Responsibility Principle)
+52. Interfejs IReportGenerator zawiera metody: generatePdf(), generateExcel(), generateHtml(), sendByEmail(). Klasa implementująca ten interfejs musi implementować wszystkie metody, nawet jeśli potrzebuje tylko jednej. Którą zasadę łamie?
+ISP (Interface Segregation Principle)
+53. Które stwierdzenie jest prawdziwe w kontekście Dependency Inversion Principle (DIP)? 1. Wysokopoziomowe moduły nie powinny zależeć od niskopoziomowych — oba powinny zależeć od abstrakcji., 2. Abstrakcje nie powinny zależeć od szczegółów — szczegóły powinny zależeć od abstrakcji., 3. Oba powyższe są prawdziwe.
+Odpowiedź: 3
+54. Wzorzec, który jest często mylony z Decoratorem, ale służy do konwersji interfejsu, a nie do rozszerzania zachowania
+Adapter
+55. Które wzorce należą do kategorii „zachowania obiektów” (object behavioral)?
+Observer, Strategy, State, Command, Visitor
+56. Klasa kontekstu (Context) zawiera referencję do obiektu stanu i deleguje do niego wykonanie operacji. O jakim wzorcu mowa?
+State
+57. Co jest największą wadą nadużywania wzorca Singleton w aplikacjach?
+Wprowadza globalny stan, mocno utrudnia testowanie jednostkowe i łamie zasadę DIP
+58. Który wzorzec jest najlepszym zamiennikiem dla dużej ilości klas dziedziczących po jednej klasie bazowej tylko po to, żeby zmienić kilka metod?
+Strategy lub Decorator
+59. Wzorzec używany bardzo często w bibliotekach GUI (np. JButton, JMenuItem) do obsługi akcji użytkownika
+Command
+60. Co jest prawdą o wzorcu Mediator?
+Zmniejsza coupling między klasami poprzez scentralizowanie komunikacji w jednym obiekcie („kontrolerze”)
