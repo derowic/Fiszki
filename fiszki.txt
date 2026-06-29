@@ -1,0 +1,84 @@
+1. Interfejs tworzenia w klasie bazowej, gdzie konkretny typ obiektu wybiera podklasa lub klasa pochodna
+   **Factory Method (Metoda wytwórcza)**
+2. Tworzenie całej rodziny spójnych, powiązanych ze sobą obiektów
+   **Abstract Factory (Fabryka abstrakcyjna)**
+3. Wzorzec krytykowany za globalny stan, trudne testy i złamanie zasady SRP
+   **Singleton**
+4. Tworzenie nowego obiektu poprzez klonowanie istniejącego egzemplarza
+   **Prototype (Prototyp)**
+5. Obiekt z wieloma opcjonalnymi polami, składany krok po kroku
+   **Builder (Budowniczy)**
+6. Dokładnie jedna instancja w systemie oraz globalny punkt dostępu
+   **Singleton**
+7. Wskaż wzorce kreacyjne
+   **Factory Method, Abstract Factory, Singleton, Prototype, Builder**
+8. Tworzenie obiektu bez znajomości konkretnego typu w czasie kompilacji (compile-time)
+   **Factory Method, Abstract Factory, Prototype**
+9. Co w przypadku wzorca Singleton jest prawdą, a co mitem?
+   **Prawdą jest, że wprowadza globalny stan do aplikacji**
+10. Co właściwie zapewnia wzorzec Abstract Factory?
+    **Spójną rodzinę produktów**
+11. Które zdanie na temat Singletona jest prawdziwe?
+    **Gwarantuje dokładnie jedną instancję; wprowadza globalny stan utrudniający testy; bywa antywzorcem, dla którego alternatywą jest Dependency Injection (DI)**
+12. Konwersja interfejsu niekompatybilnego na taki, jakiego oczekuje klient
+    **Adapter**
+13. Dynamiczne dodawanie zachowań do obiektu bez zmiany jego klasy
+    **Decorator (Dekorator)**
+14. Jeden uproszczony interfejs do złożonego podsystemu składającego się z wielu klas
+    **Facade (Fasada)**
+15. Struktura drzewiasta typu „część – całość”
+    **Composite (Kompozyt)**
+16. Surogat kontrolujący dostęp (np. lazy loading, cache, uprawnienia)
+    **Proxy (Pełnomocnik)**
+17. Współdzielenie wspólnego stanu między milionami obiektów w celu oszczędzania pamięci
+    **Flyweight (Pyłek)**
+18. Oddzielenie abstrakcji od implementacji – dwie niezależne hierarchie
+    **Bridge (Most)**
+19. Wskaż wzorce strukturalne
+    **Adapter, Decorator, Facade, Composite, Proxy, Flyweight, Bridge**
+20. Co jest prawdą w przypadku wzorca Decorator?
+    **Można go nakładać warstwowo (stackować); posiada ten sam interfejs co obiekt; jest alternatywą dla dziedziczenia**
+21. Prawidłowe zastosowania wzorca Proxy to:
+    **Lazy loading (leniwe ładowanie), Cache (buforowanie), Kontrola uprawnień**
+22. Które wzorce opakowują obiekt bez zmiany jego kodu źródłowego?
+    **Decorator, Adapter, Proxy**
+23. Powiadamianie wielu obiektów o zmianie stanu (relacja 1:N, luźne powiązania)
+    **Observer (Obserwator)**
+24. Obiekt zmienia swoje zachowanie w zależności od stanu wewnętrznego
+    **State (Stan)**
+25. Żądanie wędruje przez łańcuch handlerów (middleware), aż któryś z nich je obsłuży
+    **Chain of Responsibility (Łańcuch zobowiązań)**
+26. Wymienny algorytm wybierany w czasie wykonywania (runtime), np. różne metody sortowania
+    **Strategy (Strategia)**
+27. Szkielet algorytmu zdefiniowany w klasie bazowej, którego konkretne kroki są nadpisywane w podklasach
+    **Template Method (Metoda szablonowa)**
+28. Komunikacja wielu uczestników za pośrednictwem jednego centralnego obiektu
+    **Mediator**
+29. Zapisywanie snapshotów stanu i ich przywracanie (np. mechanizm cofnij w edytorze)
+    **Memento (Pamiątka)**
+30. Nowa operacja wykonywana na strukturze obiektów bez modyfikowania ich klas
+    **Visitor (Odwiedzający)**
+31. Co jest prawdą o wzorcu Observer?
+    **Definiuje zależność jeden-do-wielu; Subject (podmiot) powiadamia obserwatorów o zmianach**
+32. Które wzorce behawioralne nadają się do budowy pipeline'u (łańcucha operacji)?
+    **Chain of Responsibility, Command**
+33. Co jest prawdą o wzorcu State?
+    **Stany mogą inicjować przejścia do innych stanów; klasa deleguje zadania do aktualnego obiektu stanu**
+34. Co odróżnia wzorzec State od Strategy?
+    **W State obiekt sam zmienia swoje zachowanie w zależności od stanu; w Strategy to klient wybiera algorytm z zewnątrz. Oba wykorzystują polimorfizm**
+35. Klasa robi wszystko: rejestracja, walidacja, powiadomienia i raporty. Jaką zasadę łamie?
+    **SRP (Zasada pojedynczej odpowiedzialności)**
+36. Podtyp musi być zastępowalny przez swój typ bazowy. Jaką zasadę to opisuje?
+    **LSP (Zasada podstawienia Liskov)**
+37. Moduł wysokiego poziomu zależy bezpośrednio od konkretnej klasy bazy danych. Jaka zasada jest łamana?
+    **DIP (Zasada inwersji zależności)**
+38. Dodanie nowego formatu danych wymaga modyfikacji istniejącej klasy. Jaka zasada jest łamana?
+    **OCP (Zasada otwarte-zamknięte)**
+39. Interfejs wymusza implementację metod, których dana klasa nie używa. Jaka zasada jest łamana?
+    **ISP (Zasada segregacji interfejsów)**
+40. Klasa obsługująca pliki dodatkowo je kompresuje i loguje zdarzenia. Jakie zasady łamie?
+    **SRP (Zasada pojedynczej odpowiedzialności)**
+41. Które stwierdzenia dotyczące zasady DIP (Dependency Inversion Principle) są poprawne?
+    **Szczegóły powinny zależeć od abstrakcji, a nie odwrotnie; moduły wysokopoziomowe i niskopoziomowe powinny zależeć od abstrakcji**
+42. Jakie objawy świadczą o naruszeniu zasady SRP?
+    **Klasa zmienia się z wielu różnych powodów; miesza logikę biznesową z dostępem do bazy danych i formatowaniem; jest trudna do testowania, bo robi zbyt wiele rzeczy naraz**
