@@ -1,0 +1,74 @@
+44. Umożliwia dostęp do elementów kolekcji bez ujawniania jej wewnętrznej struktury
+Iterator (Iterator)
+45. Wzorzec używany w interpreterach języków, wyrażeń regularnych lub prostych gramatyk
+Interpreter
+46. Wskaż wszystkie wzorce behawioralne
+Chain of Responsibility, Command, Interpreter, Iterator, Mediator, Memento, Observer, State, Strategy, Template Method, Visitor
+47. Które zdanie najlepiej opisuje wzorzec Command? 1. Hermetyzuje żądanie jako obiekt, umożliwiając parametryzację klientów, kolejkowanie operacji oraz wsparcie dla undo/redo., 2. Definiuje rodzinę algorytmów i pozwala na ich wymianę w czasie działania., 3. Umożliwia dodawanie nowych zachowań poprzez opakowywanie obiektu.
+Odpowiedź: 1
+48. Co odróżnia Command od Strategy?
+Command hermetyzuje całe żądanie (często z parametrami i możliwością cofnięcia), Strategy hermetyzuje tylko algorytm/wariant zachowania.
+49. Wzorzec, który pozwala na „cofanie” operacji poprzez zapisywanie stanu obiektu
+Memento (Pamiątka)
+50. Które wzorce mogą być użyte do implementacji mechanizmu „Cofnij” (Undo)?
+Command + Memento
+51. Klasa UserService zawiera metody: rejestracja, logowanie, wysyłanie maila, generowanie PDF raportu i walidacja danych. Którą zasadę SOLID łamie najbardziej?
+SRP (Single Responsibility Principle)
+52. Interfejs IReportGenerator zawiera metody: generatePdf(), generateExcel(), generateHtml(), sendByEmail(). Klasa implementująca ten interfejs musi implementować wszystkie metody, nawet jeśli potrzebuje tylko jednej. Którą zasadę łamie?
+ISP (Interface Segregation Principle)
+53. Które stwierdzenie jest prawdziwe w kontekście Dependency Inversion Principle (DIP)? 1. Wysokopoziomowe moduły nie powinny zależeć od niskopoziomowych — oba powinny zależeć od abstrakcji., 2. Abstrakcje nie powinny zależeć od szczegółów — szczegóły powinny zależeć od abstrakcji., 3. Oba powyższe są prawdziwe.
+Odpowiedź: 3
+54. Wzorzec, który jest często mylony z Decoratorem, ale służy do konwersji interfejsu, a nie do rozszerzania zachowania
+Adapter
+55. Które wzorce należą do kategorii „zachowania obiektów” (object behavioral)?
+Observer, Strategy, State, Command, Visitor
+56. Klasa kontekstu (Context) zawiera referencję do obiektu stanu i deleguje do niego wykonanie operacji. O jakim wzorcu mowa?
+State
+57. Co jest największą wadą nadużywania wzorca Singleton w aplikacjach?
+Wprowadza globalny stan, mocno utrudnia testowanie jednostkowe i łamie zasadę DIP
+58. Który wzorzec jest najlepszym zamiennikiem dla dużej ilości klas dziedziczących po jednej klasie bazowej tylko po to, żeby zmienić kilka metod?
+Strategy lub Decorator
+59. Wzorzec używany bardzo często w bibliotekach GUI (np. JButton, JMenuItem) do obsługi akcji użytkownika
+Command
+60. Co jest prawdą o wzorcu Mediator?
+Zmniejsza coupling między klasami poprzez scentralizowanie komunikacji w jednym obiekcie („kontrolerze”)
+61. Wzorzec, który pozwala na iterowanie po złożonej strukturze drzewiastej (np. system plików, drzewo DOM) w sposób jednolity
+Iterator + Composite
+62. Który wzorzec jest najczęściej stosowany w implementacji menu, przycisków i skrótów klawiszowych?
+Command
+63. Co jest kluczową różnicą między wzorcem Adapter a Proxy?
+Adapter zmienia interfejs, Proxy zachowuje ten sam interfejs, ale kontroluje dostęp.
+64. Wzorzec idealny do implementacji systemu wtyczek (plugins) lub obsługi wielu formatów plików
+Strategy
+65. Które wzorce należą do grupy „class behavioral”?
+Template Method, Interpreter
+66. Klasa NotificationManager wysyła powiadomienia na email, SMS, push i Slack. Przy dodaniu nowego kanału (np. WhatsApp) musimy modyfikować kod tej klasy. Którą zasadę SOLID łamie?
+OCP (Open-Closed Principle)
+67. Wzorzec, który pozwala obiektowi zmieniać swoją klasę „w locie”
+State
+68. Który wzorzec jest uważany za „szkielet algorytmu”?
+Template Method
+69. Co jest prawdą o wzorcu Memento?
+Zapewnia enkapsulację stanu obiektu — klient nie ma dostępu do wewnętrznej struktury stanu.
+70. Które zdanie o wzorcu Visitor jest prawdziwe? 1. Pozwala dodawać nowe operacje do istniejących klas bez ich modyfikowania., 2. Wymaga modyfikacji wszystkich klas elementów przy dodaniu nowego visitora., 3. Oba powyższe są prawdziwe.
+Odpowiedź: 3
+71. Nadmierne używanie wzorca Mediator może prowadzić do:
+„God Object” (klasa robi zbyt wiele)
+72. Który wzorzec jest często łączony z Command do realizacji operacji Undo/Redo?
+Memento
+73. Moduł biznesowy bezpośrednio tworzy instancje klas MySqlRepository i PostgreSqlRepository w zależności od konfiguracji. Którą zasadę SOLID łamie?
+DIP (Dependency Inversion Principle)
+74. Wzorzec, który jest alternatywą dla głębokiego dziedziczenia (np. Pizza → PizzaWithCheese → PizzaWithCheeseAndHam itd.)
+Decorator
+75. Które wzorce pomagają w realizacji „zasady otwarte-zamknięte” (OCP)?
+Strategy, Decorator, Visitor, Factory Method
+76. Co odróżnia Flyweight od Singleton?
+Flyweight współdzieli wiele małych obiektów (np. znaki w edytorze tekstu), Singleton gwarantuje jedną instancję całej klasy.
+77. Wzorzec stosowany w bibliotekach logowania, kompresji, szyfrowania – nakładany warstwowo
+Decorator
+78. Które stwierdzenie o wzorcu Chain of Responsibility jest prawdziwe?
+Każdy handler decyduje, czy obsłuży żądanie, czy przekaże je dalej.
+79. Klasa ReportGenerator dziedziczy po PdfReport, ExcelReport i HtmlReport używając wielodziedziczenia. Którą zasadę SOLID najprawdopodobniej łamie?
+LSP (Liskov Substitution Principle) – trudność w zastępowaniu typów bazowych.
+80. Najbardziej „elastyczne”, ale też najbardziej skomplikowane wzorce kreacyjne to:
+Abstract Factory i Builder

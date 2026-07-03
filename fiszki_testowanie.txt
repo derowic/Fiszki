@@ -1,0 +1,240 @@
+1. Jaka jest główna różnica między testowaniem a debugowaniem?
+A) Testowanie usuwa błędy, a debugowanie szuka ich w specyfikacji.
+B) Testowanie polega na wykrywaniu defektów, podczas gdy debugowanie to ich lokalizacja i naprawa przez programistę.
+C) Testowanie wykonuje się wyłącznie automatycznie, a debugowanie wyłącznie manualnie.
+D) Nie ma żadnej różnicy, to synonimy.
+B
+2. Zasada ISTQB "Paradoks pestycydów" mówi, że:
+A) Im więcej błędów znajdziemy w module, tym więcej ich tam jeszcze jest.
+B) Testowanie zależy od kontekstu (aplikacja medyczna vs. gra mobilna).
+C) Powtarzanie tych samych testów sprawi, że przestaną one wykrywać nowe defekty.
+D) 100% pokrycie kodu gwarantuje brak błędów w oprogramowaniu.
+C
+3. Czym w terminologii ISTQB różni się "defekt" (bug) od "awarii" (failure)?
+A) Defekt to wada w kodzie źródłowym, a awaria to widoczne dla użytkownika, niepoprawne działanie systemu.
+B) Awaria to błąd popełniony przez człowieka, a defekt to problem ze sprzętem.
+C) Defekt to błąd krytyczny, a awaria to błąd o niskim priorytecie.
+D) Pojęcia te oznaczają dokładnie to samo.
+A
+4. Która z zasad testowania mówi o tym, że "wielka liczba wykrytych defektów nie gwarantuje sukcesu systemu, jeśli nie spełnia on potrzeb użytkownika"?
+A) Skupianie się na defektach.
+B) Testowanie ukazuje obecność defektów.
+C) Przekonanie o braku błędów jest błędem (mrzonka o braku błędów).
+D) Wczesne testowanie.
+C
+5. Co oznacza pojęcie "Wczesne testowanie" (Early testing)?
+A) Rozpoczynanie testów codziennie rano przed programistami.
+B) Angażowanie testerów w analizę wymagań zanim powstanie kod źródłowy.
+C) Przeprowadzanie testów wyłącznie w pierwszej fazie projektu (MVP).
+D) Szybkie uruchamianie testów regresywnych.
+B
+6. Kto w zespole projektowym wykazuje największy stopień niezależności testów?
+A) Programista testujący swój własny kod.
+B) Inny programista z tego samego zespołu komponentu.
+C) Tester zatrudniony w zespole deweloperskim.
+D) Zewnętrzny certyfikowany audytor lub tester spoza organizacji.
+D
+7. Zgodnie z zasadą Pareto w testowaniu:
+A) 20% czasu projektu powinno być przeznaczone na testy automatyczne.
+B) 80% testerów powinno posiadać certyfikat ISTQB.
+C) Około 80% defektów koncentruje się w około 20% modułów kodu.
+D) Każdy test należy powtórzyć 20 razy, aby uzyskać 80% pewności.
+C
+8. Co jest głównym celem testowania potwierdzającego (retesting)?
+A) Sprawdzenie, czy defekt zgłoszony wcześniej został poprawnie naprawiony.
+B) Upewnienie się, że zmiany w kodzie nie popsuły innych, działających funkcji.
+C) Sprawdzenie działania systemu pod dużym obciążeniem.
+D) Walidacja oprogramowania przez klienta końcowego.
+A
+9. Proces testowy według ISTQB kończy się fazą:
+A) Wykonania testów (Test Execution).
+B) Projektowania testów (Test Design).
+C) Zamykania testów (Test Completion).
+D) Raportowania defektów (Defect Reporting).
+C
+10. Psychologia testowania wskazuje, że autor kodu może mieć trudność z dostrzeżeniem własnych błędów. Zjawisko to nazywamy:
+A) Paradoksem pestycydów.
+B) Ślepotą na własne błędy (confirmation bias / błąd potwierdzenia).
+C) Zasadą czarnej skrzynki.
+D) Negatywnym nastawieniem.
+B
+11. Testy jednostkowe (komponentowe) są zazwyczaj pisane i wykonywane przez:
+A) Programistów.
+B) Klientów biznesowych.
+C) Niezależny zespół QA.
+D) Scrum Mastera.
+A
+12. Jaki jest główny cel testów integracyjnych?
+A) Sprawdzenie wyglądu interfejsu graficznego (UI).
+B) Przetestowanie pojedynczej metody w klasie w izolacji.
+C) Weryfikacja interakcji i przepływu danych pomiędzy modułami lub systemami.
+D) Podpisanie umowy wdrożeniowej z klientem.
+C
+13. Testy systemowe skupiają się na weryfikacji:
+A) Wyłącznie kodu źródłowego (czysta logika).
+B) Całego zintegrowanego systemu pod kątem wymagań funkcjonalnych i niefunkcjonalnych.
+C) Komunikacji bazy danych z API (w izolacji).
+D) Pojedynczych formularzy HTML.
+B
+14. Czym różnią się testy akceptacyjne Alfa od testów Beta?
+A) Alfa są automatyczne, a Beta są manualne.
+B) Alfa wykonuje klient, a Beta wykonują programiści.
+C) Alfa są prowadzone w środowisku deweloperskim, a Beta przez użytkowników w ich własnym środowisku.
+D) Alfa dotyczą wydajności, a Beta bezpieczeństwa.
+C
+15. Testowanie niefunkcjonalne odpowiada na pytanie:
+A) Co system robi?
+B) Jak system działa (np. jak szybko, jak bezpiecznie)?
+C) Czy kod został napisany zgodnie ze standardami Clean Code?
+D) Jakie są wymagania biznesowe klienta?
+B
+16. Który typ testów sprawdza, czy aplikacja poprawnie współpracuje z różnymi przeglądarkami lub systemami operacyjnymi?
+A) Testy wydajnościowe.
+B) Testy regresywne.
+C) Testy kompatybilności (portowalności).
+D) Testy integracyjne komponentów.
+C
+17. Testy regresywne należy uruchomić:
+A) Tylko raz, na samym początku projektu.
+B) Wyłącznie wtedy, gdy system ulegnie całkowitej awarii.
+C) Po każdej modyfikacji oprogramowania (np. poprawce błędu lub dodaniu funkcji), aby sprawdzić, czy nie uszkodzono istniejącego kodu.
+D) Kiedy budżet projektu zbliża się do końca.
+C
+18. Model V (V-model) w inżynierii oprogramowania obrazuje:
+A) Strukturę baz danych.
+B) Sposób eskalacji defektów.
+C) Ścisłą zależność pomiędzy fazami rozwoju oprogramowania a odpowiadającymi im poziomami testów.
+D) Szybkość wykonywania testów automatycznych.
+C
+19. Testy dymne (Smoke tests) mają na celu:
+A) Dokładne sprawdzenie wszystkich ukrytych funkcji systemu.
+B) Szybkie zweryfikowanie, czy główna, krytyczna funkcjonalność kompilacji działa i czy system nadaje się do dalszych testów.
+C) Obciążenie serwera do momentu jego awarii.
+D) Przetestowanie zabezpieczeń przeciwpożarowych serwerowni.
+B
+20. Które z poniższych testów zaliczamy do testów strukturalnych (białoskrzynkowych)?
+A) Testowanie oparte na przypadkach użycia.
+B) Analiza wartości brzegowych.
+C) Testowanie pokrycia instrukcji lub decyzji w kodzie.
+D) Testowanie eksploracyjne.
+C
+21. Techniki czarnoskrzynkowe (oparte na specyfikacji) charakteryzują się tym, że:
+A) Wymagają pełnego dostępu do kodu źródłowego i architektury bazy danych.
+B) Tester projektuje testy wyłącznie na podstawie wymagań i specyfikacji funkcjonalnej, nie znając struktury wewnętrznej kodu.
+C) Są wykonywane wyłącznie w nocy bez monitorów.
+D) Służą tylko do testowania warstwy sprzętowej.
+B
+22. Pole formularza akceptuje wiek w zakresie od 18 do 65 lat (liczby całkowite). Który zestaw wartości reprezentuje analizę wartości brzegowych (dwuodczynnikową)?
+A) 10, 30, 80
+B) 18, 40, 65
+C) 17, 18, 65, 66
+D) 0, 18, 65, 100
+C
+23. Do jakiej techniki zaliczymy podział danych wejściowych na grupy, w których system powinien zachować się identycznie (np. liczby dodatnie, liczby ujemne)?
+A) Analiza wartości brzegowych.
+B) Podział na klasy równoważności (Equivalence Partitioning).
+C) Testowanie przejść między stanami.
+D) Zgadywanie błędów.
+B
+24. Kiedy najlepiej zastosować tablice decyzyjne do projektowania testów?
+A) Gdy aplikacja ma prosty formularz z jednym polem tekstowym.
+B) Gdy zachowanie systemu zależy od złożonych kombinacji różnych warunków i reguł biznesowych.
+C) Gdy chcemy zmierzyć pokrycie pętli while w kodzie.
+D) Podczas przeprowadzania testów użyteczności z użytkownikami.
+B
+25. Jaka technika projektowania testów jest najbardziej odpowiednia do przetestowania procesu rezerwacji biletu lotniczego (etapy: Wybór -> Dane -> Płatność -> Potwierdzenie)?
+A) Tablica decyzyjna.
+B) Podział na klasy równoważności.
+C) Testowanie przejść między stanami (State Transition Testing).
+D) Pokrycie instrukcji.
+C
+26. Testowanie eksploracyjne zalicza się do technik:
+A) Białoskrzynkowych.
+B) Opartych na specyfikacji.
+C) Opartych na doświadczeniu (Experience-based).
+D) Statycznych.
+C
+27. Jeśli w teście białoskrzynkowym osiągnięto 100% pokrycia decyzji (Decision Coverage), to oznacza to automatycznie, że:
+A) Osiągnięto również 100% pokrycia instrukcji (Statement Coverage).
+B) Przetestowano wszystkie możliwe ścieżki i kombinacje danych w systemie.
+C) Program nie zawiera żadnych błędów logicznych.
+D) Kod został w 100% zautomatyzowany.
+A
+28. Co oznacza pojęcie "Zgadywanie błędów" (Error Guessing)?
+A) Losowe klikanie w aplikacji bez żadnego planu.
+B) Narzędzie AI, które samo pisze kod testowy.
+C) Technika oparta na doświadczeniu intuicyjnym testera, polegająca na przewidywaniu, gdzie programiści najczęściej popełniają błędy.
+D) Sposób na obliczanie budżetu testowego.
+C
+29. Do technik dynamicznych zaliczamy:
+A) Inspekcję kodu źródłowego.
+B) Przegląd techniczny specyfikacji wymagań.
+C) Wykonanie testów obciążeniowych na działającej aplikacji.
+D) Analizę statyczną architektury systemu.
+C
+30. Które z poniższych zdań najlepiej definiuje "Przypadek testowy" (Test Case)?
+A) Opis błędu wysłany do programisty.
+B) Zestaw danych wejściowych, warunków wstępnych, oczekiwanych rezultatów i warunków końcowych, opracowany w celu weryfikacji konkretnej funkcji.
+C) Plik z kodem automatycznym napisanym w języku Python lub Java.
+D) Harmonogram pracy testera w danym sprincie.
+B
+31. Który z poniższych procesów zaliczany jest do testowania statycznego?
+A) Testowanie wydajności bazy danych pod obciążeniem SQL.
+B) Przegląd dokumentacji projektowej lub statyczna analiza kodu bez jego uruchamiania.
+C) Testy akceptacyjne aplikacji na telefonie.
+D) Testy API metodą czarnoskrzynkową.
+B
+32. Jaki rodzaj przeglądu (review) dokumentacji jest najbardziej formalny, ma przypisane role (Moderator, Inspektor) i wymaga zbierania metryk?
+A) Przejście (Walkthrough).
+B) Przegląd nieformalny.
+C) Przegląd techniczny.
+D) Inspekcja (Inspection).
+D
+33. Norma ISO/IEC 25010 dotyczy:
+A) Zarządzania bezpieczeństwem informacji w chmurze.
+B) Modelu jakości oprogramowania (definiuje cechy takie jak wydajność, użyteczność, niezawodność).
+C) Certyfikacji profesjonalnych testerów.
+D) Struktur baz danych SQL.
+B
+34. Czym różni się Priorytet (Priority) defektu od jego Ważności/Surowości (Severity)?
+A) Priorytet ustala tester, a Ważność ustala klient.
+B) Ważność mówi o biznesowej dacie wydania, a Priorytet o błędzie technicznym.
+C) Ważność określa techniczny wpływ błędu na działanie systemu, a Priorytet określa pilność jego naprawy z punktu widzenia biznesu.
+D) To synonimy stosowane w różnych systemach (Jira vs Bugzilla).
+C
+35. Przykładem błędu o NISKIEJ ważności (Severity), ale WYSOKIM priorytecie (Priority) jest:
+A) Literówka w logo firmy na stronie głównej banku.
+B) Całkowity brak możliwości zalogowania się do systemu przez jakiegokolwiek użytkownika.
+C) Błąd ortograficzny w konsoli logów serwera (niewidoczny dla użytkownika).
+D) Wyciek danych kart kredytowych z bazy.
+A
+36. W cyklu życia defektu, status "Weryfikacja" (Ready for QA / To Verify) oznacza, że:
+A) Defekt został odrzucony przez programistę jako niepoprawny.
+B) Błąd został właśnie znaleziony i opisany przez testera.
+C) Programista naprawił błąd i tester powinien ponownie wykonać test, aby potwierdzić poprawkę.
+D) Projekt został zakończony pomyślnie.
+C
+37. Co wyraża metryka "Gęstość defektów" (Defect Density)?
+A) Liczbę testerów przypadających na jednego dewelopera.
+B) Procent testów automatycznych, które zakończyły się błędem.
+C) Liczbę wykrytych defektów podzieloną przez rozmiar modułu (np. na tysiąc linii kodu lub punktów funkcyjnych).
+D) Czas potrzebny na naprawę jednego błędu.
+C
+38. Czym zajmuje się Zapewnienie Jakości (Quality Assurance - QA) w odróżnieniu od Kontroli Jakości (Quality Control - QC)?
+A) QA skupia się na procesach i zapobieganiu powstawaniu defektów, a QC na produkcie i wykrywaniu defektów (testowanie to część QC).
+B) QA to testowanie manualne, a QC to testowanie automatyczne.
+C) QA wykonuje się na końcu projektu, a QC na początku.
+D) QA dotyczy tylko dokumentacji, a QC tylko baz danych.
+A
+39. Co oznacza wskaźnik MTBF (Mean Time Between Failures)?
+A) Średni czas potrzebny na napisanie jednego testu.
+B) Maksymalną liczbę defektów w systemie.
+C) Średni czas bezawaryjnej pracy systemu pomiędzy kolejnymi awariami (metryka niezawodności).
+D) Minimalny czas testowania regresywnego.
+C
+40. Co to jest "Kryterium wyjścia" (Exit Criteria) w planie testów?
+A) Sposób ewakuacji zespołu z biura w trakcie awarii.
+B) Warunki, które muszą być spełnione, aby deweloperzy mogli zacząć pisać kod.
+C) Zdefiniowane wcześniej warunki (np. brak błędów krytycznych, określone pokrycie kodu), które pozwalają formalnie zakończyć fazę testów.
+D) Lista osób, które zostały zwolnione z projektu
+C

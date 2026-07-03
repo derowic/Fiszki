@@ -32,11 +32,11 @@
     **Proxy (Pełnomocnik)**
 17. Współdzielenie wspólnego stanu między milionami obiektów w celu oszczędzania pamięci
     **Flyweight (Pyłek)**
-18. Oddzielenie abstrakcji od implementacji – dwie niezależne hierarchie
+18. Wzorzec: Oddziela abstrakcje od implementacji gdy są one złożone lub musza być potencjalnei zmienione
     **Bridge (Most)**
 19. Wskaż wzorce strukturalne
     **Adapter, Decorator, Facade, Composite, Proxy, Flyweight, Bridge**
-20. Co jest prawdą w przypadku wzorca Decorator? 1. Można go nakładać warstwowo (stackować); posiada ten sam interfejs co obiekt; jest alternatywą dla dziedziczenia, 2. Wymaga modyfikacji kodu źródłowego klasy bazowej za każdym razem, gdy chcemy dodać nową funkcjonalność do obiektu., 3. Definiuje relację jeden-do-wielu, w której zmiana stanu jednego obiektu powoduje automatyczne powiadomienie innych obiektów. (Opis wzorca Obserwator) ,Zapewnia, że w całym systemie istnieje tylko jedna instancja danej klasy i tworzy do niej globalny punkt dostępu. (Opis wzorca Singleton)
+20. Co jest prawdą w przypadku wzorca Decorator? 1. Można go nakładać warstwowo (stackować); posiada ten sam interfejs co obiekt; jest alternatywą dla dziedziczenia, 2. Wymaga modyfikacji kodu źródłowego klasy bazowej za każdym razem, gdy chcemy dodać nową funkcjonalność do obiektu., 3. Definiuje relację jeden-do-wielu, w której zmiana stanu jednego obiektu powoduje automatyczne powiadomienie innych obiektów
     **Można go nakładać warstwowo (stackować); posiada ten sam interfejs co obiekt; jest alternatywą dla dziedziczenia**
 21. Prawidłowe zastosowania wzorca Proxy to: 1.Lazy loading (leniwe ładowanie), Cache (buforowanie), Kontrola uprawnie, 2.Konwersja niekompatybilnego interfejsu jednej klasy na inny interfejs, którego oczekuje klient., 3.Dynamiczne dodawanie nowych, opcjonalnych zachowań i odpowiedzialności do pojedynczego obiektu bez zmiany jego kodu.
     **Lazy loading (leniwe ładowanie), Cache (buforowanie), Kontrola uprawnień**
@@ -108,8 +108,6 @@ ISP (Interface Segregation Principle)
 Odpowiedź: 3
 54. Wzorzec, który jest często mylony z Decoratorem, ale służy do konwersji interfejsu, a nie do rozszerzania zachowania
 Adapter
-55. Które wzorce należą do kategorii „zachowania obiektów” (object behavioral)?
-Observer, Strategy, State, Command, Visitor
 56. Klasa kontekstu (Context) zawiera referencję do obiektu stanu i deleguje do niego wykonanie operacji. O jakim wzorcu mowa?
 State
 57. Co jest największą wadą nadużywania wzorca Singleton w aplikacjach?
@@ -118,5 +116,33 @@ Wprowadza globalny stan, mocno utrudnia testowanie jednostkowe i łamie zasadę 
 Strategy lub Decorator
 59. Wzorzec używany bardzo często w bibliotekach GUI (np. JButton, JMenuItem) do obsługi akcji użytkownika
 Command
-60. Co jest prawdą o wzorcu Mediator?
-Zmniejsza coupling między klasami poprzez scentralizowanie komunikacji w jednym obiekcie („kontrolerze”)
+61. Wzorzec, który pozwala na iterowanie po złożonej strukturze drzewiastej (np. system plików, drzewo DOM) w sposób jednolity
+Iterator + Composite
+62. Który wzorzec jest najczęściej stosowany w implementacji menu, przycisków i skrótów klawiszowych?
+Command
+63. Co jest kluczową różnicą między wzorcem Adapter a Proxy?
+Adapter zmienia interfejs, Proxy zachowuje ten sam interfejs, ale kontroluje dostęp.
+64. Wzorzec idealny do implementacji systemu wtyczek (plugins) lub obsługi wielu formatów plików
+Strategy
+66. Klasa NotificationManager wysyła powiadomienia na email, SMS, push i Slack. Przy dodaniu nowego kanału (np. WhatsApp) musimy modyfikować kod tej klasy. Którą zasadę SOLID łamie?
+OCP (Open-Closed Principle)
+67. Wzorzec, który pozwala obiektowi zmieniać swoją klasę „w locie”
+State
+68. Który wzorzec jest uważany za „szkielet algorytmu”?
+Template Method
+70. Które zdanie o wzorcu Visitor jest prawdziwe? 1. Pozwala dodawać nowe operacje do istniejących klas bez ich modyfikowania., 2. Wymaga modyfikacji wszystkich klas elementów przy dodaniu nowego visitora., 3. Oba powyższe są prawdziwe.
+Odpowiedź: 3
+71. Nadmierne używanie wzorca Mediator może prowadzić do:
+„God Object” (klasa robi zbyt wiele)
+72. Który wzorzec jest często łączony z Command do realizacji operacji Undo/Redo?
+Memento
+73. Moduł biznesowy bezpośrednio tworzy instancje klas MySqlRepository i PostgreSqlRepository w zależności od konfiguracji. Którą zasadę SOLID łamie?
+DIP (Dependency Inversion Principle)
+74. Wzorzec, który jest alternatywą dla głębokiego dziedziczenia (np. Pizza → PizzaWithCheese → PizzaWithCheeseAndHam itd.)
+Decorator
+76. Co odróżnia Flyweight od Singleton?
+Flyweight współdzieli wiele małych obiektów (np. znaki w edytorze tekstu), Singleton gwarantuje jedną instancję całej klasy.
+77. Wzorzec stosowany w bibliotekach logowania, kompresji, szyfrowania – nakładany warstwowo
+Decorator
+79. Klasa ReportGenerator dziedziczy po PdfReport, ExcelReport i HtmlReport używając wielodziedziczenia. Którą zasadę SOLID najprawdopodobniej łamie?
+LSP (Liskov Substitution Principle) – trudność w zastępowaniu typów bazowych.
